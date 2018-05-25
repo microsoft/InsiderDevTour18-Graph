@@ -1,0 +1,65 @@
+
+
+Generate User Activity
+_userActivityChannel = UserActivityChannel.GetDefault();
+_userActivity = await _userActivityChannel.GetOrCreateUserActivityAsync($"Case {selectedCase.Id}");
+
+deeplink
+_userActivity.ActivationUri = new Uri($"contoso-insurance://case?{selectedCase.Id}");
+_userActivity.VisualElements.DisplayText = $"Case {selectedCase.Id}";
+
+customize
+_userActivity.VisualElements.Description = $"Opened by {selectedCase.FullName}";
+_userActivity.VisualElements.Attribution =
+    new UserActivityAttribution(new Uri("https://demoicons.blob.core.windows.net/blobcontainer/Icons/car.png"))
+    {
+        AlternateText = "Case"
+    };
+
+
+finalize
+await _userActivity.SaveAsync();
+_userActivitySession?.Dispose();
+_userActivitySession = _userActivity.CreateSession();
+
+call
+await GenerateUserActivity(selectedCase);
+
+
+
+cards
+
+
+card
+var card = new AdaptiveCard
+{
+    BackgroundImage = new Uri("https://demoicons.blob.core.windows.net/blobcontainer/bg.jpg")
+};
+
+// Your code goes here
+
+return card.ToJson();
+
+
+
+card content
+
+var imageColumn = GetImageColumn(selectedCase);
+var nameColumn = GetNameColumn(selectedCase);
+var addressColumn = GetAddressColumn(selectedCase);
+var phoneColumn = GetPhoneColumn(selectedCase);
+
+card.Body.Add(new AdaptiveContainer
+{
+    Items = new List<AdaptiveElement>
+    {
+        new AdaptiveColumnSet { Columns = new List<AdaptiveColumn> { imageColumn, nameColumn } },
+        new AdaptiveColumnSet { Columns = new List<AdaptiveColumn> { addressColumn } },
+        new AdaptiveColumnSet { Columns = new List<AdaptiveColumn> { phoneColumn } }
+    }
+});
+
+
+GetUserActivty
+var adaptiveCard = CreateAdaptiveCardForTimelineAsync(selectedCase);
+_userActivity.VisualElements.Content = 	AdaptiveCardBuilder.CreateAdaptiveCardFromJson(adaptiveCard);

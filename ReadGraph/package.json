@@ -1,0 +1,43 @@
+{
+  "name": "demo_app",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "configure-webpack": "webpack --config webpack.config.vendor.js && webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "@microsoft/microsoft-graph-client": "^1.0.0",
+    "@types/events": "^1.2.0",
+    "@types/history": "4.6.0",
+    "@types/react": "15.0.35",
+    "@types/react-dom": "15.5.1",
+    "@types/react-hot-loader": "3.0.3",
+    "@types/react-router": "4.0.12",
+    "@types/react-router-dom": "4.0.5",
+    "@types/webpack-env": "1.13.0",
+    "aspnet-webpack": "^2.0.1",
+    "aspnet-webpack-react": "^3.0.0",
+    "awesome-typescript-loader": "3.2.1",
+    "css-loader": "0.28.4",
+    "event-source-polyfill": "0.0.9",
+    "extract-text-webpack-plugin": "2.1.2",
+    "file-loader": "0.11.2",
+    "isomorphic-fetch": "2.2.1",
+    "json-loader": "0.5.4",
+    "moment": "^2.22.1",
+    "moment-duration-format": "^2.2.2",
+    "msal": "^0.1.5",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-hot-loader": "3.0.0-beta.7",
+    "react-image-lightbox": "^5.0.0",
+    "react-player": "^1.5.0",
+    "react-router-dom": "4.1.1",
+    "style-loader": "0.18.2",
+    "typescript": "2.4.1",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "url-loader": "0.5.9",
+    "webpack": "2.5.1",
+    "webpack-hot-middleware": "2.18.2"
+  }
+}
