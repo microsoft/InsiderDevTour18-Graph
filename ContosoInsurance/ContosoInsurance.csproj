@@ -146,6 +146,7 @@
     <Content Include="AdaptiveCards\bot1.json" />
     <Content Include="AdaptiveCards\bot2.json" />
     <Content Include="AdaptiveCards\bot3.json" />
+    <None Include="AdaptiveCards\timeline design.json" />
     <None Include="ContosoInsurance_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
