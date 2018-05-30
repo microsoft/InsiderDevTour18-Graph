@@ -1,18 +1,16 @@
 # Setup
 
-Setup
-
-- Clone or download this repo on your local harddrive
-- Install Visual Studio 2017: https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15
+- **Clone or download** this repo on your local harddrive
+- Install **Visual Studio 2017**: https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15
 - Launch Visual Studio 2017
-- Go into the "ReadGraph" folder and open the "demo-app.sln" solution
-- In the "Solution Explorer", open the "graphApp" folder
-- Open "graphHelper.js" and "index.js" files
-- Launch the app in MS Edge. The home page will say "Please login to retrieve your insights and appointments"
-- Press CTRL+SHIFT+D to enter demo mode
-- Now, open the second project via the "ContosoInsurance.sln" solution and force a rebuild of the solution
-- Open "CasePage.xaml.cs" available under the "Pages" folder
-- Move to the GenerateUserActivity method
+- Go into the **ReadGraph folder** and open the **demo-app.sln** solution
+- In the **Solution Explorer**, open the **graphApp** folder
+- Open **graphHelper.js** and **index.js** files
+- **Launch the app** in MS Edge. The home page will say *Please login to retrieve your insights and appointments*
+- Press **CTRL+SHIFT+D** to enter demo mode
+- Now, **open the second project** via the **ContosoInsurance.sln** solution and **force a rebuild** of the solution
+- Open **CasePage.xaml.cs** available under the **Pages** folder
+- Move to the **GenerateUserActivity** method
 
 ## Prepare a couple of code snippets in the Visual Studio toolbox:
 1. 1st for UserActivity:
