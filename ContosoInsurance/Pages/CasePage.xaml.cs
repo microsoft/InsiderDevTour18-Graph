@@ -75,6 +75,9 @@ namespace ContosoInsurance.Pages
 
         /*private static AdaptiveColumn GetImageColumn(Case selectedCase)
         {
+            var imageName = System.IO.Path.GetFileName(selectedCase.AvatarUri);
+            var imageURL = "https://david.blob.core.windows.net/images/" + imageName;
+
             return new AdaptiveColumn
             {
                 Width = AdaptiveColumnWidth.Auto,
@@ -82,7 +85,7 @@ namespace ContosoInsurance.Pages
                 {
                     new AdaptiveImage
                     {
-                        Url = new Uri("https://pbs.twimg.com/profile_images/910829310369423360/HebqTkCW_400x400.jpg"),
+                        Url = new Uri(imageURL),
                         Size = AdaptiveImageSize.Small,
                         Style = AdaptiveImageStyle.Person
                     }
