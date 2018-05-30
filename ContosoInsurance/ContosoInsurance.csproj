@@ -148,6 +148,7 @@
     <Content Include="AdaptiveCards\bot3.json" />
     <None Include="AdaptiveCards\timeline design.json" />
     <None Include="ContosoInsurance_TemporaryKey.pfx" />
+    <None Include="Slides\Styled Slides - Graph.pptx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Avatars\1.jpg" />
