@@ -105,9 +105,9 @@ _userActivity.VisualElements.Content = AdaptiveCardBuilder.CreateAdaptiveCardFro
 ## Web Application
 
 - Switch to the **Dashboard Web App**. Explain that it looks at your calendar
-- Press the secret **key 'a'**
+- Press the secret **key 'a'**  (this sumulates the addition of a new calendar item as if it is not in demo mode)
 - Show you've just got a 3 hours budget meeting scheduled. 
-- Press the secret **key 's'**
+- Press the secret **key 's'** (this sumulates the insight item as if it is not in demo mode) 
 - When a meeting longer than 1h30 has been identified, it will take the next available timeslot on the calendar to schedule a relaxation moment.
 - Go back to **Visual Studio** in the **demo-app** project inside the **graphHelper.js** file
 - **Copy paste the getUserData function** just after *TODO: Add People Data here*. Rename the function **getPeopleData**. We now need to update this function with the URL from Graph Explorer to get people data.
