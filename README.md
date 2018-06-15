@@ -1,6 +1,8 @@
 # Setup
 
 - **Clone or download** this repo on your local harddrive
+- Install [NodeJS](https://nodejs.org/) Long Term Support (LTS) version. If you have NodeJS already installed please check you have the latest version using `node -v`. It should return the current [LTS version](https://nodejs.org/en/download/).
+- After installing node, make sure npm is up to date by running following command: `npm install -g npm`
 - Install **Visual Studio 2017**: https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15
 - Launch Visual Studio 2017
 - Go into the **ReadGraph folder** and open the **demo-app.sln** solution
@@ -11,6 +13,10 @@
 - Now, **open the second project** via the **ContosoInsurance.sln** solution and **force a rebuild** of the solution
 - Open **CasePage.xaml.cs** available under the **Pages** folder
 - Move to the **GenerateUserActivity** method
+
+
+
+
 
 ## Prepare a couple of code snippets in the Visual Studio toolbox:
 1. 1st for UserActivity:
